@@ -1,0 +1,21 @@
+.swiper-pagination {
+    width: 80% !important;
+    display: flex;
+    height: 20px;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 20px;
+}
+
+.swiper-pagination-bullet {
+    width: 30px; /* Keep all bullets same size */
+    height: 7px;
+    border-radius: 5px;
+    background: #f8d7da; /* Light red */
+    opacity: 1;
+    transition: background 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+    background: #d32f2f; /* Dark red */
+}
