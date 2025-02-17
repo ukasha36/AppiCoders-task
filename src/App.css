@@ -1,0 +1,24 @@
+
+/* @import 'bootstrap/dist/css/bootstrap.min.css'; */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'newsLetter';
+    src: url(./assets/font/static/JosefinSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'bombay';
+    src: url(./assets/font/graphicusdt-demi.ttf);
+}
+
+.font-bombay {
+    font-family: 'bombay';
+}
+
+.font-newsLetter {
+    font-family: 'newsLetter';
+}
