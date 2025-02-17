@@ -51,6 +51,7 @@ const Testimonial = () => {
 
   return (
     <div
+      id="testimonials"
       className="relative flex items-center justify-center  h-[50rem]  md:h-screen macbook:h-[60vh] w-full bg-cover bg-center"
       style={{ backgroundImage: "url('/testimonial-bg.webp')" }}
     >

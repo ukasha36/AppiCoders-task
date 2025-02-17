@@ -33,6 +33,7 @@ const Banner = () => {
 
   return (
     <div
+      id="home"
       className="relative pt-32 h-[60rem] md:h-screen macbook:h-[60vh] w-full bg-cover bg-center"
       style={{ backgroundImage: "url('/hero-bg.webp')" }}
     >

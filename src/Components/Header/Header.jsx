@@ -14,7 +14,7 @@ const Header = () => {
     { name: "Services", id: "services" },
     { name: "Why Choose us", id: "whychooseus" },
     { name: "Portfolio", id: "portfolio" },
-    { name: "Projects", id: "projects" },
+    { name: "Projects", id: "portfolio" },
     { name: "Testimonials", id: "testimonials" },
     { name: "Technologies", id: "technologies" },
     { name: "Contact", id: "contact" },

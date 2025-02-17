@@ -34,6 +34,7 @@ const productsData = [
     images: [
       "/products/Sports-Training-App/Sports-Training-App01.png",
       "/products/Sports-Training-App/Sports-Training-App02.png",
+      "/products/Sports-Training-App/Sports-Training-App03.png",
     ],
   },
   {
@@ -42,6 +43,7 @@ const productsData = [
     images: [
       "/public/products/Fitness/Fitness01.png",
       "/public/products/Fitness/Fitness02.png",
+      "/public/products/Fitness/Fitness03.png",
     ],
   },
 ];
@@ -61,6 +63,7 @@ const Products = () => {
 
   return (
     <div
+      id="portfolio"
       className="p-8 bg-red-600 text-white"
       style={{
         backgroundImage: "url('/products-bg.webp')",

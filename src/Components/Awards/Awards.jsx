@@ -18,7 +18,7 @@ const industries = [
 
 const Awards = () => {
   return (
-    <section className=" bg-gray-100 py-16">
+    <section id="whychooseus" className=" bg-gray-100 py-16">
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">
           Awards And Recoginization
