@@ -61,13 +61,13 @@ const Banner = () => {
                 </div>
                 {/* Right Section - Content */}
                 <div className=" flex flex-col items-center md:items-start md:w-1/2 text-white">
-                  <h1 className=" text-center md:text-start text-2xl md:text-4xl font-bold">
+                  <h1 className=" font-poppins text-center md:text-start text-2xl md:text-4xl font-bold">
                     {slide.title}
                   </h1>
-                  <p className="  mt-4 text-sm text-center md:text-start md:text-lg">
+                  <p className=" font-poppins  mt-4 text-sm text-center md:text-start md:text-lg">
                     {slide.content}
                   </p>
-                  <button className="mt-6 bg-red-600 hover:bg-red-700 text-white py-3 px-6 rounded-lg font-semibold">
+                  <button className="mt-6 font-poppins bg-gradient-to-r from-[#333333] to-[#dd1818] hover:bg-red-700 text-white py-3 px-6 rounded-lg font-semibold">
                     GET A FREE QUOTE
                   </button>
                 </div>

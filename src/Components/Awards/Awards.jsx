@@ -20,8 +20,8 @@ const Awards = () => {
   return (
     <section id="whychooseus" className=" bg-gray-100 py-16">
       <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">
-          Awards And Recoginization
+        <h2 className="text-4xl font-poppins font-bold text-center text-gray-800 mb-8">
+          Awards and Recognitions
         </h2>
         <div className=" flex flex-wrap  justify-center gap-8 ">
           {industries.map((industry) => (

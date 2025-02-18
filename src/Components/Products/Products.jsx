@@ -64,7 +64,7 @@ const Products = () => {
   return (
     <div
       id="portfolio"
-      className="p-8 bg-red-600 text-white"
+      className=" py-8 bg-red-600 text-white"
       style={{
         backgroundImage: "url('/products-bg.webp')",
         backgroundPosition: "center",
@@ -72,11 +72,11 @@ const Products = () => {
       }}
     >
       <h2 className="text-center text-3xl font-bold">Products</h2>
-      <div className="flex justify-center gap-4 mt-4 overflow-x-auto whitespace-nowrap scrollbar-hide">
+      <div className="flex md:justify-center justify-start space-x-4 mx-1 overflow-x-auto mt-4 scrollbar-hide md:flex-wrap">
         {categories.map((category) => (
           <button
             key={category}
-            className={`px-4 py-2 rounded ${
+            className={` px-1 md:px-4 py-2  text-[12px] md:text-[16px]  rounded ${
               selectedCategory === category
                 ? "border-white text-white rounded-none border-b-2"
                 : "bg-transparent text-white"
@@ -87,21 +87,23 @@ const Products = () => {
           </button>
         ))}
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-        {filteredProducts.map((product) =>
-          product.images.map((img, index) => (
-            <div
-              key={`${product.id}-${index}`}
-              className="bg-white p-4 rounded-lg"
-            >
-              <img
-                src={img}
-                alt={product.category}
-                className="w-full rounded mb-2"
-              />
-            </div>
-          ))
-        )}
+      <div className=" flex justify-center ">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8 p-8 md:w-[80%] ">
+          {filteredProducts.map((product) =>
+            product.images.map((img, index) => (
+              <div
+                key={`${product.id}-${index}`}
+                className="bg-white p-4 rounded-lg"
+              >
+                <img
+                  src={img}
+                  alt={product.category}
+                  className="w-full rounded mb-2"
+                />
+              </div>
+            ))
+          )}
+        </div>
       </div>
     </div>
   );

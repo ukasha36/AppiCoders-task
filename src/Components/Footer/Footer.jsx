@@ -17,9 +17,15 @@ function Footer() {
             alt="Appicoders Logo"
           />
           <div className="mt-5">
-            <h3 className="text-lg font-semibold">Contact Us</h3>
-            <p className="text-sm">Tel: +1 (800) 896-8018</p>
-            <p className="text-sm">Email: info@appicoders.com</p>
+            <h3 className="text-lg mb-2 font-semibold font-poppins cursor-pointer   ">
+              Contact Us
+            </h3>
+            <p className="text-sm text-gray-400 font-poppins cursor-pointer ">
+              Tel: +1 (800) 896-8018
+            </p>
+            <p className="text-sm text-gray-400 font-poppins cursor-pointer  ">
+              Email: info@appicoders.com
+            </p>
           </div>
         </div>
 
@@ -38,9 +44,15 @@ function Footer() {
           </div>
           {isAboutOpen && (
             <ul className="mt-2 space-y-2">
-              <li className="text-sm hover:underline">Home</li>
-              <li className="text-sm hover:underline">About Us</li>
-              <li className="text-sm hover:underline">Contact Us</li>
+              <li className="text-sm hover:underline font-poppins cursor-pointer  ">
+                Home
+              </li>
+              <li className="text-sm text-gray-400 hover:underline font-poppins cursor-pointer  ">
+                About Us
+              </li>
+              <li className="text-sm text-gray-400  hover:underline font-poppins cursor-pointer ">
+                Contact Us
+              </li>
             </ul>
           )}
 
@@ -48,7 +60,9 @@ function Footer() {
             onClick={() => setServicesOpen(!isServicesOpen)}
             className="flex justify-between items-center cursor-pointer py-2 border-b border-gray-600 mt-4"
           >
-            <p className="text-sm font-medium">Appicoders Services</p>
+            <p className="text-sm font-medium font-poppins cursor-pointer  ">
+              Appicoders Services
+            </p>
             {isServicesOpen ? (
               <MdOutlineExpandLess size={24} />
             ) : (
@@ -57,13 +71,13 @@ function Footer() {
           </div>
           {isServicesOpen && (
             <ul className="mt-2 space-y-2">
-              <li className="text-sm hover:underline">
+              <li className="text-sm text-gray-400 font-poppins cursor-pointer hover:underline">
                 iPhone Application Development
               </li>
-              <li className="text-sm hover:underline">
+              <li className="text-sm text-gray-400 font-poppins cursor-pointer hover:underline">
                 Android Application Development
               </li>
-              <li className="text-sm hover:underline">
+              <li className="text-sm text-gray-400  font-poppins cursor-pointer hover:underline">
                 Enterprise App Development
               </li>
             </ul>
@@ -73,24 +87,34 @@ function Footer() {
         {/* Desktop Links */}
         <div className="hidden md:flex md:w-2/3 justify-between mt-8 md:mt-0">
           <div>
-            <h3 className="text-lg font-semibold">About</h3>
+            <h3 className="text-lg font-semibold font-poppins cursor-pointer  ">
+              About
+            </h3>
             <ul className="mt-3 space-y-2">
-              <li className="text-sm hover:underline">Home</li>
-              <li className="text-sm hover:underline">About Us</li>
-              <li className="text-sm hover:underline">Contact Us</li>
+              <li className="text-sm text-gray-400 hover:underline font-poppins cursor-pointer   ">
+                Home
+              </li>
+              <li className="text-sm text-gray-400 hover:underline font-poppins cursor-pointer  ">
+                About Us
+              </li>
+              <li className="text-sm text-gray-400 hover:underline font-poppins cursor-pointer  ">
+                Contact Us
+              </li>
             </ul>
           </div>
           <div>
-            <h3 className="text-lg font-semibold">Appicoders Services</h3>
+            <h3 className="text-lg font-semibold font-poppins cursor-pointer  ">
+              Appicoders Services
+            </h3>
             <ul className="mt-3 space-y-2">
-              <li className="text-sm hover:underline">
-                Android Application Development
+              <li className="text-sm text-gray-400 hover:underline font-poppins cursor-pointer  ">
+                iPHONE APPLICATION DEVELOPMENT
               </li>
-              <li className="text-sm hover:underline">
-                Android Application Development
+              <li className="text-sm hover:underline text-gray-400 font-poppins cursor-pointer  ">
+                ANDROID APPLICATION DEVELOPMENT
               </li>
-              <li className="text-sm hover:underline">
-                Android Application Development
+              <li className="text-sm hover:underline text-gray-400 font-poppins cursor-pointer  ">
+                ENTERPRISE APP DEVELOPMENT
               </li>
             </ul>
           </div>
@@ -98,7 +122,7 @@ function Footer() {
       </div>
 
       {/* Copyright Section */}
-      <div className="text-center mt-10 border-t border-gray-700 pt-5 text-sm">
+      <div className="text-center mt-10 border-t text-gray-400 font-poppins cursor-pointer border-gray-700 pt-5 text-sm">
         © 2023 APPICODERS. ALL RIGHTS RESERVED.
       </div>
     </footer>

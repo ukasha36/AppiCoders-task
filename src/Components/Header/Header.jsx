@@ -36,6 +36,10 @@ const Header = () => {
     setShowNav(!showNav);
   };
 
+  const handleCallClick = (phoneNumber) => {
+    window.location.href = `tel:${phoneNumber}`;
+  };
+
   return (
     <div>
       <nav className="w-full absolute z-10 top-[30px] flex justify-center items-center h-[100px]">
@@ -56,7 +60,7 @@ const Header = () => {
             {desktopNavItems.map((item, index) => (
               <li
                 key={index}
-                className="cursor-pointer text-[14px] text-white macbook:text-[18px] font-newsLetter"
+                className="cursor-pointer font-poppins text-[14px] text-white macbook:text-[18px] font-newsLetter"
                 onClick={() => scrollTo(item.id)}
               >
                 {item.name}
@@ -64,9 +68,11 @@ const Header = () => {
             ))}
 
             {/* Call Section */}
-            <div className="flex items-center text-white justify-center bg-transparent border-2 border-white rounded-[30px] outline-none px-2 py-2">
+            <div className=" cursor-pointer font-poppins  flex items-center text-white justify-center bg-transparent border-2 border-white rounded-[30px] outline-none px-2 py-2">
               <FiPhone className="mr-2" size={18} />
-              <p>+13449490393</p>
+              <p onClick={() => handleCallClick("+1 (800) 826-8018")}>
+                +1 (800) 826-8018
+              </p>
             </div>
           </ul>
         </div>
@@ -81,11 +87,11 @@ const Header = () => {
 
         {/* Mobile Menu */}
         <div
-          className={`fixed inset-0 bg-black bg-opacity-50 transition-transform transform ${
+          className={`fixed inset-0 bg-white bg-opacity-50 transition-transform transform ${
             showNav ? "translate-x-0" : "translate-x-full"
           }`}
         >
-          <div className="w-2/3 relative z-30 bg-white h-full p-4 ml-auto">
+          <div className="w-2/3 relative z-30 bg-[#272737] h-full p-4 ml-auto">
             <button className="text-black" onClick={() => setShowNav(false)}>
               <IoClose size={24} />
             </button>
@@ -93,7 +99,7 @@ const Header = () => {
               {mobileNavItems.map((item, index) => (
                 <li
                   key={index}
-                  className="cursor-pointer py-1 border-b border-gray-500 text-black font-newsLetter"
+                  className="cursor-pointer font-poppins py-1 border-b border-gray-500 text-white font-newsLetter"
                   onClick={() => {
                     scrollTo(item.id);
                     setShowNav(false);

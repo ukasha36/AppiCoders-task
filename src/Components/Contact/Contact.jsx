@@ -1,5 +1,4 @@
-import React from "react";
-import { FiSearch, FiPhone } from "react-icons/fi";
+import { FiPhone } from "react-icons/fi";
 
 const Contact = () => {
   return (
@@ -7,10 +6,10 @@ const Contact = () => {
       {/* LEFT SECTION */}
       <div className="md:w-1/2 bg-red-600 text-white p-8 flex flex-col justify-center">
         <h3 className="text-xl uppercase font-bold">LET’S TALK</h3>
-        <h2 className="text-3xl font-semibold mt-2">
-          Got an idea? Let’s get in touch!
+        <h2 className="text-3xl font-poppins font-semibold mt-2">
+          Got an idea? Lets get in touch!
         </h2>
-        <p className="mt-4 max-w-md">
+        <p className="mt-4 font-poppins max-w-md">
           Briefly describe your idea or project here. Provide enough detail to
           let your users know what this contact section is for and why they
           should reach out.
@@ -21,26 +20,26 @@ const Contact = () => {
           <input
             type="text"
             placeholder="Name"
-            className="w-full p-3 rounded bg-white text-black placeholder-gray-500 focus:outline-none"
+            className="w-full font-poppins p-3 rounded bg-white text-black placeholder-gray-500 focus:outline-none"
           />
           <input
             type="email"
             placeholder="Email Address"
-            className="w-full p-3 rounded bg-white text-black placeholder-gray-500 focus:outline-none"
+            className="w-full font-poppins p-3 rounded bg-white text-black placeholder-gray-500 focus:outline-none"
           />
           <input
             type="text"
             placeholder="Phone Number"
-            className="w-full p-3 rounded bg-white text-black placeholder-gray-500 focus:outline-none"
+            className="w-full p-3 font-poppins rounded bg-white text-black placeholder-gray-500 focus:outline-none"
           />
           <textarea
             rows={4}
             placeholder="Message"
-            className="w-full p-3 rounded bg-white text-black placeholder-gray-500 focus:outline-none"
+            className="w-full p-3 font-poppins rounded bg-white text-black placeholder-gray-500 focus:outline-none"
           />
           <button
             type="submit"
-            className="bg-gradient-to-r from-[#333333] to-[#dd1818] text-white py-3 px-6 w-full rounded hover:bg-opacity-90 transition"
+            className="bg-gradient-to-r font-poppins from-[#333333] to-[#dd1818] text-white py-3 px-6 w-full rounded hover:bg-opacity-90 transition"
           >
             Let’s get in touch
           </button>
@@ -65,7 +64,7 @@ const Contact = () => {
 
         {/* CONTACT DETAILS */}
         <div className="text-center max-w-sm  py-4 ">
-          <p className="text-white mb-4">
+          <p className="text-white mb-4 font-poppins  ">
             Please submit your inquiry and our App Development Strategist will
             contact you shortly.
           </p>
@@ -73,12 +72,14 @@ const Contact = () => {
             <span className="">
               <FiPhone className="mr-2 text-[50px]" />
             </span>
-            <span className="text-white font-semibold text-[22px]  ">
+            <span className="text-white font-poppins font-semibold text-[22px]  ">
               +1 (800) 826-8018
             </span>
           </div>
           <div className="flex items-center justify-center">
-            <span className="text-white">info@appcoders.com</span>
+            <span className="text-white font-poppins   ">
+              info@appcoders.com
+            </span>
           </div>
         </div>
       </div>

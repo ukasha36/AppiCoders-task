@@ -55,18 +55,21 @@ const Testimonial = () => {
       className="relative flex items-center justify-center  h-[50rem]  md:h-screen macbook:h-[60vh] w-full bg-cover bg-center"
       style={{ backgroundImage: "url('/testimonial-bg.webp')" }}
     >
-      <div className="bg-[#c02626de] relative text-white p-4 py-12 md:p-8 rounded-lg shadow-lg w-11/12 md:w-[80%] lg:w-2/3">
+      <div className="bg-[#c51b26e1] relative text-white p-4 py-12 md:p-8 rounded-lg shadow-lg w-11/12 md:w-[80%] lg:w-2/3">
         <div className="flex justify-start items-center mb-6 absolute top-[-30px] ">
-          <div className="text-5xl bg-white text-red-500 rounded-[50%] px-4 pt-2  ">
+          {/* <div className="text-5xl bg-white text-red-500 rounded-[50%] px-4 pt-2  ">
             ❝
+          </div> */}
+          <div>
+            <img src="/reviews-icon.webp" alt="" className="w-16 " />
           </div>
         </div>
         <div className=" flex flex-col md:flex-row items-center   ">
           <div className="text-white  ">
-            <h2 className="text-lg md:text-xl font-semibold">
+            <h2 className="text-lg md:text-xl mb-2 font-poppins  font-semibold">
               Client Testimonial
             </h2>
-            <h1 className="text-3xl md:text-3xl font-bold">
+            <h1 className="text-3xl md:text-4xl font-poppins  font-bold">
               What our clients are Saying.
             </h1>
           </div>
@@ -94,13 +97,15 @@ const Testimonial = () => {
                         className="w-16 h-20 object-contain rounded-full"
                       />
                       <div className="flex flex-col ">
-                        <h3 className="text-lg font-bold">
+                        <h3 className="text-lg font-poppins  font-bold">
                           {testimonial.name}
                         </h3>
                         <div className=" w-16 h-[0.16rem] rounded-[1px] bg-red-600" />
                       </div>
                     </div>
-                    <p className="text-gray-700 py-8  ">{testimonial.quote}</p>
+                    <p className="text-gray-700 py-8 font-poppins   ">
+                      {testimonial.quote}
+                    </p>
                   </div>
                 </SwiperSlide>
               ))}
