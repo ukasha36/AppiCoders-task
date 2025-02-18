@@ -56,7 +56,7 @@ const Header = () => {
           </a>
 
           {/* Desktop Header */}
-          <ul className="hidden md:flex h-full w-[80%] macbook:w-[80%] justify-center items-center xl:gap-[1.5rem] lg:gap-4 macbook:gap-14">
+          <ul className="  hidden lg:flex h-full w-[80%] macbook:w-[80%] justify-center items-center xl:gap-[1.5rem] lg:gap-4 macbook:gap-14">
             {desktopNavItems.map((item, index) => (
               <li
                 key={index}
@@ -79,7 +79,7 @@ const Header = () => {
 
         {/* Mobile Hamburger Menu Icon */}
         <div
-          className="lg:hidden text-white cursor-pointer right-[35px] absolute top-[10px]"
+          className=" lg:hidden text-white cursor-pointer right-[35px] absolute top-[10px]"
           onClick={toggleShowNavbar}
         >
           <RxHamburgerMenu size={24} />

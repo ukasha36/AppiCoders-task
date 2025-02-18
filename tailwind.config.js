@@ -19,10 +19,12 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        poppins: ['Poppins', 'sans-serif'],
+        poppins: ["Poppins", "sans-serif"],
         // You can add other custom fonts here
       },
-
+      screens: {
+        macbook: "2000px", // Customize this value as needed
+      },
     },
   },
   plugins: [],
